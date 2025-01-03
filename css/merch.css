@@ -81,15 +81,15 @@ button:not(.active) {
 }
 
 #sweater {
-  background-image: url(/images/merch/Trion-Sweater.jpg);
+  background-image: url(/images/merch/sweater.jpg);
 }
 
 #beanie {
-  background-image: url(/images/merch/Trion-Beanie.png);
+  background-image: url(/images/merch/beanie.png);
 }
 
 #shirt {
-  background-image: url(/images/merch/Trion-Shirt.jpg);
+  background-image: url(/images/merch/shirt.jpg);
 }
 
 #super-shirt {
@@ -134,7 +134,7 @@ div.sections {
 div.sections section {
   background-color: grey;
 
-  height: 400px;
+  height: 450px;
   width: 450px;
 
   display: flex;
@@ -159,7 +159,7 @@ div.sections section.clothes h3 {
 }
 
 section.clothes {
-  background-image: url(/images/merch/trion-shirt.jpg);
+  background-image: url(/images/merch/shirt.jpg);
   background-size: cover;
 }
 
