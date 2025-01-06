@@ -1,194 +1,48 @@
-.btn {
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    padding: 14px 28px;
-    font-size: 10px;
-    cursor: pointer;
-  }
-  
-  /* Green */
-  .success {
-    border-color: hsl(61, 92%, 53%);
-    color: hsl(0, 0%, 0%);
-  }
-  
-  .success:hover {
-    background-color: hsl(61, 84%, 54%);
-    color: white;
-  }
-  
-  /* Blue */
-  .info {
-    border-color: #2196F3;
-    color: rgb(0, 0, 0)
-  }
-  
-  .info:hover {
-    background: #2196F3;
-    color: white;
-  }
-  
-  /* Orange */
-  .warning {
-    border-color: #ff9800;
-    color: rgb(0, 0, 0);
-  }
-  
-  .warning:hover {
-    background: #ff9800;
-    color: white;
-  }
-  
-  .default:hover {
-    background: #e7e7e7;
-  }
-.container{
-    margin-left: 6em;
-    float: left;
-}
-h1{
-    text-align: center;
-    font-size: 2em;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
-    text-transform: capitalize;
-    transition: all 0.2s linear;
+main {
+  margin-bottom: 30px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    padding: 25px;
+h1 {
+  margin-left: 70px;
+  font-size: 3.75em;
+  margin-bottom: 0;
 }
 
-.container form {
-    width: 700px;
-    padding: 20px;
-    background: #000000;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+.product {
+  display: flex;
+  border: 2px solid var(--text);
+  margin: 0 75px;
 }
 
-.container form .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+h2 {
+  font-size: 2em;
 }
 
-.container form .row .col {
-    flex: 1 1 250px;
+.product section {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.col .title {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    padding-bottom: 5px;
+button {
+  font-family: 'Poppins';
+  font-size: 1.5em;
+  padding: 5px 30px;
+  margin-top: 30px;
+  background-color: var(--main);
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  justify-self: flex-end;
 }
 
-.col .inputBox {
-    margin: 15px 0;
+button:hover {
+  background-color: var(--main-highlight);
 }
 
-.col .inputBox label {
-    margin-bottom: 10px;
-    display: block;
+button.checkout {
+  margin-left: 75px;
+  font-size: 2em;
 }
-
-.col .inputBox input,
-.col .inputBox select {
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 10px 15px;
-    font-size: 15px;
-}
-
-.col .inputBox input:focus,
-.col .inputBox select:focus {
-    border: 1px solid #000;
-}
-
-.col .flex {
-    display: flex;
-    gap: 15px;
-}
-
-.col .flex .inputBox {
-    flex: 1 1;
-    margin-top: 5px;
-}
-
-.col .inputBox img {
-    height: 34px;
-    margin-top: 5px;
-    filter: drop-shadow(0 0 1px #000);
-}
-
-.container form .submit_btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 17px;
-    background: rgb(255, 0, 0);
-    color: #ffffff;
-    margin-top: 5px;
-    cursor: pointer;
-    letter-spacing: 1px;
-}
-
-.container form .submit_btn:hover {
-    background: #000000;
-}
-
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-    display: none;
-}
-.images{
-    float: right; 
-    margin-right: 45em;
-    margin-top: 6em;
-    border: 0.1em solid white;
-    
-}
-h2,
-u{
-    text-align: left;
-}
-i{
-    background-color: var(--main);
-}
-i:hover,
-i:focus{
-    color: #d2d2d2d3;
-}
-h3{
-    margin-left: 20em;
-}
-#Women{
-    float: left;
-}
-.alignleft {
-    float: left;
-  }
-  
-  .alignright {
-    float: right;
-  }
-  
-  .Edit {
-    clear: both;
-  }
-  
-  .Edit {
-    background-color: grey;
-  }
-  hr{
-    border: 2px solid white;
-  }

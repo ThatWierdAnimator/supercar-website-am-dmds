@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/clothes.css">
-    <title>Clothes | TRION</title>
+    <link rel="stylesheet" href="/css/checkout.css">
+    <title>Checkout | TRION</title>
 </head>
 <body>
     <nav>
@@ -17,7 +17,7 @@
             <li><a href="/html/merch.html">Merch</a></li>
             <li><a href="/html/models.html">Models</a>
                 <ul class="sublist">
-                  <li><a href="/html/nemesis.html">Nemesis</a></li>
+                   <li><a href="/html/nemesis.html">Nemesis</a></li>
                     <li><a href="/html/black-widow.html">Black Widow</a></li>
                 </ul>
             </li>
@@ -45,14 +45,51 @@
         </div>
     </nav>
     <main>
-      <h1>Clothes</h1>
-      <div>
-        <section id="jacket" onclick="location.href='this thang.html'"><h2>Trion Jacket</h2></section>
-        <section id="beanie" onclick="location.href='this thang.html'"><h2>Trion Beanie</h2></section>
-        <section id="polo" onclick="location.href='this thang.html'"><h2>Trion Polo</h2></section>
-        <section id="supershirt" onclick="location.href='/html/products/supershirt.html'"><h2>SuperShirt</h2></section>
-        <section id="normal-shirt" onclick="location.href='this thang.html'"><h2>Normal Shirt</h2></section>
-      </div>
+        <h1>Checkout</h1>
+        <div class="side-by-side">
+            <form action="#">
+                <h2 class="first-header">Contact Information</h2>
+                <input type="email" placeholder="Email" class="full">
+                <input type="text" placeholder="First Name" class="half">
+                <input type="text" placeholder="Last Name" class="half">
+                <div>
+                    <input type="checkbox" id="news">
+                    <label for="news">Keep me up to date on news and exclusive offers</label>
+                </div>
+                <h2>Shipping Address</h2>
+                <input type="text" placeholder="Country" class="full">
+                <input type="text" placeholder="City, State" class="half">
+                <input type="text" placeholder="Postal Code" class="half">
+                <div>
+                    <input type="checkbox" id="save-info">
+                    <label for="save-info">Save this information for next time</label>
+                </div>
+                <h2>Credit Card Information</h2>
+                <input type="text" placeholder="Card Number" class="full">
+                <input type="text" placeholder="MM / YY" class="half">
+                <input type="text" placeholder="CVV" class="half">
+                <a href="/index.html">
+                    <button type="submit">Pay and go Home</button>
+                </a>
+                <p>We'll send you an email confirming your purchase</p>
+            </form>
+            <section class="items">
+                <h2>1 Item</h2>
+                <hr>
+                <div class="item">
+                    <img src="/images/merch/supershirt.jpg" alt="supershirt" width="200px">
+                    <section class="details">
+                        <h3>Supershirt</h3>
+                        <p>$250</p>
+                        <p>Qty: 1</p>
+                        <p>Subtotal: 250$</p>
+                    </section>
+                </div>
+                <hr>
+                <p class="total">Total to Pay: 250$</p>
+            </section>
+        </div>
+        <p class="legal">By placing your order you agree to out Terms & Conditions, Privacy, and Return policies. You also consent to your data being stored by Trion, which may be used to make future shopping experiences better for users.</p>
     </main>
     <footer>
         <!-- This div is here to use flexbox to position these items -->
