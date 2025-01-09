@@ -1,188 +1,169 @@
-  .centered {
-    position: absolute;
-    justify-content: space-around;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4em;
-    text-shadow: 5px 3px black;
-    font-weight: var(--bold);
-  }
+header {
+  background-image: url(/images/merch/merch-hero-img.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 
-  h1 {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
-    text-shadow: 5px 3px black;
-    font-weight: var(--bold);
-  }
+  height: 645px;
 
-  * {
-    box-sizing: border-box;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  body {
-    overflow-x: hidden;
-  }
+header h1 {
+  font-size: 4em;
+  text-shadow: 3px 3px black;
+}
 
-  h2 {
-    width: 1000px;
-    margin: 0;
-    margin-left: 50px;
-    position: relative;
-    z-index: 0;
+main section h2 {
+  font-size: 2.5em;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 25px;
+}
 
-    font-size: 3em;
-  }
+button {
+  z-index: 15;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
 
-  button {
-    z-index: 15;
-    position: relative;
-    cursor: pointer;
-    background-color: transparent;
+  margin-left: 50px;
+  height: 50px;
+  border: none;
 
-    margin-left: 50px;
-    height: 50px;
-    border: none;
+  transition: filter 0.25s ease-in-out;
+}
 
-    transition: filter 0.25s ease-in-out;
-  }
+button:not(.active) {
+  filter: invert(69%) saturate(12%) hue-rotate(192deg) brightness(89%) contrast(90%);
+}
 
-  button:not(.active) {
-    filter: invert(69%) saturate(12%) hue-rotate(192deg) brightness(89%) contrast(90%);
-  }
+#carousel {
+  display: flex;
+  justify-content: flex-start;
 
-  #carousel {
-    display: flex;
-    justify-content: flex-start;
+  width: 90000vw;
+  margin-left: 30px;
 
-    width: 90000vw;
-    margin-left: 30px;
+  transition: transform 0.5s ease-in-out;
+}
 
-    transition: transform 0.5s ease-in-out;
-  }
+.product {
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 500px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 
-  .product {
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    width: 500px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 10px 20px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
+.product h3 {
+  text-shadow: 3px 3px black;
 
-  #men-polo {
-    background-image: url(/images/merch/polo_1.jpg);
-  }
+  font-size: 2em;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
 
-  #sweater {
-    background-image: url(/images/merch/Trion-Sweater.jpg);
-  }
+.product h3.black {
+  color: black;
+  text-shadow: 3px 3px lightgrey;
+}
 
-  #beanie {
-    background-image: url(/images/merch/Trion-Beanie.png);
-  }
+#men-polo {
+  background-image: url(/images/merch/polo_1.jpg);
+}
 
-  #shirt {
-    background-image: url(/images/merch/Trion-Shirt.jpg);
-  }
+#sweater {
+  background-image: url(/images/merch/sweater.jpg);
+}
 
-  #super-shirt {
-    background-image: url(/images/store-preview.jpg);
-  }
+#beanie {
+  background-image: url(/images/merch/beanie.png);
+}
 
-  h3 {
-    text-align: end;
+#shirt {
+  background-image: url(/images/merch/shirt.jpg);
+}
 
-    text-shadow: 3px 3px black;
-    font-size: 1.75em;
-    margin: 10px;
+#super-shirt {
+  background-image: url(/images/store-preview.jpg);
+}
 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-  }
+aside {
+  border-top: 3px solid var(--main);
+  border-bottom: 3px solid var(--main);
+  background-image: url(/images/merch/polo-close-up.jpg);
+  background-size: cover;
 
-  .column {
-    float: left;
-    width: 25%;
-    padding: 3px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  .flip-card { 
-    margin-left: 15%;
-    background-color: transparent;
-    width: 500px;
-    height: 500px;
-    perspective: 1000px;
-    float:left; 
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-   
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .flip-card-back {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    transform: rotateY(180deg);
-    flex-direction: column;
-  }
-  h1:hover{
-    color: red;
-  }
-  .container {
-    padding-top: 5em;
-    padding-bottom: 15em;
-    position: relative;
-    text-align: center;
-    color: rgb(105, 105, 105);
-  }
-  .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    font-size: 2em;
-    background-color:black ;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px rgb(255, 0, 0);
-  }
+  margin-top: 30px;
+}
 
-  h4 {
-    font-size: 3em;
-    font-weight: var(--bold);
-    margin: 0;
-    margin-top: 1%;
-  }
+aside h3 {
+  font-size: 2.5em;
+  text-shadow: 3px 3px black;
+}
 
-  .shop-look {
-    text-align: center;
-    border-top: 3px solid var(--main);
-    border-bottom: 3px solid var(--main);
-    height: 175px;
-    margin-top: 20px;
-  }
+aside p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+  font-size: 1.25em;
+
+  margin-top: 0;
+}
+
+div.sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+div.sections section {
+  background-color: grey;
+
+  height: 450px;
+  width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  cursor: pointer;
+}
+
+div.sections section h3 {
+  font-size: 2em;
+  padding-right: 30px;
+  margin-bottom: 15px;
+
+  text-shadow: 3px 3px black;
+}
+
+div.sections section.clothes h3 {
+  color: black;
+  text-shadow: 3px 3px lightgrey
+}
+
+section.clothes {
+  background-image: url(/images/merch/shirt.jpg);
+  background-size: cover;
+}
+
+section.models {
+  background-image: url(/images/merch/models.jpg);
+  background-size: cover;
+}
